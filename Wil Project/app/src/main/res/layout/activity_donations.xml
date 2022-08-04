@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".DonationsActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:background="@drawable/shape_rect01">
+
+        <ImageButton
+            android:contentDescription="backBtn"
+            android:id="@+id/backBtn"
+            android:layout_width="49dp"
+            android:layout_height="48dp"
+            android:background="@null"
+
+            android:padding="10dp"
+            android:src="@drawable/ic_back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Donations"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="italic" />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/imageIcon"
+
+
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo"
+            app:c_border="true"
+            app:c_border_color="@color/black"
+            app:c_border_width="1dp"
+
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp" />
+
+        <EditText
+            android:id="@+id/TitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageIcon"
+            android:background="@drawable/shape_rect02"
+            android:drawableStart="@drawable/ic_title_text"
+            android:hint="Item Type"
+            android:inputType="textPersonName|textCapWords"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:text="" />
+
+
+        <EditText
+            android:id="@+id/Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TitleText"
+            android:background="@drawable/shape_rect02"
+            android:drawableStart="@drawable/ic_title_text"
+            android:hint="quantity"
+            android:inputType="textCapSentences|textImeMultiLine"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/Location1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Description"
+            android:background="@drawable/shape_rect02"
+            android:drawableStart="@drawable/ic_apps"
+            android:drawableEnd="@drawable/ic_down"
+            android:hint="Location"
+            android:inputType="textCapSentences|textImeMultiLine"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/Loc"
+            android:contentDescription="loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Location1"
+            android:background="@drawable/shape_rect02"
+            android:hint=""
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+
+        <EditText
+            android:id="@+id/Location"
+            android:contentDescription="LoC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Loc"
+            android:background="@drawable/shape_rect02"
+            android:hint=""
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/Switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Location"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Leave a Comment" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Switch"
+            android:background="@drawable/shape_rect02"
+            android:hint="Name"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/comment"
+            android:contentDescription="comm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:background="@drawable/shape_rect02"
+            android:hint="comment"
+            android:inputType="textCapSentences"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+
+        <Button
+            android:id="@+id/submitDonation"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_below="@id/comment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:minWidth="300dp"
+            android:text="Donate" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+
