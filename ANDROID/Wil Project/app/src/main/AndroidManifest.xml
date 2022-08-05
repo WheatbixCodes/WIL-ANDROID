@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
+            android:name=".InitiativeActivity"
+            android:exported="false" />
+        <activity
             android:name=".DonationsActivity"
             android:exported="false" />
         <activity
