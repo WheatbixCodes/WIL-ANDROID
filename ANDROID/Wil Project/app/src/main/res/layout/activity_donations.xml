@@ -16,11 +16,11 @@
         android:background="@drawable/shape_rect01">
 
         <ImageButton
-            android:contentDescription="backBtn"
             android:id="@+id/backBtn"
             android:layout_width="49dp"
             android:layout_height="48dp"
             android:background="@null"
+            android:contentDescription="backBtn"
 
             android:padding="10dp"
             android:src="@drawable/ic_back_white" />
@@ -177,7 +177,7 @@
     </RelativeLayout>
 
 
-
+    <include layout="@layout/footer"/>
 
 
 
