@@ -2,4 +2,9 @@
     <string name="app_name">Collections App</string>
     <string name="new_user_signup">New User? <b>SignUp</b></string>
     <string name="your_password">Your Password</string>
+
+
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+
 </resources>
