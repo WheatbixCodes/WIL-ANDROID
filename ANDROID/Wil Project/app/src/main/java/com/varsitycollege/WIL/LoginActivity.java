@@ -105,11 +105,11 @@ private String password = "", email = "";
                         progressDialog.dismiss();
                         String userType = ""+snapshot.child("userType").getValue();
                         if (userType.equals("user")) {
-                            startActivity(new Intent(LoginActivity.this,DonationsActivity.class));
+                            startActivity(new Intent(LoginActivity.this,InitiativeActivity.class));
                         finish();
                         }
                         else if (userType.equals("admin")){
-                            startActivity(new Intent(LoginActivity.this, DonationsActivity.class));
+                            startActivity(new Intent(LoginActivity.this, InitiativeActivity.class));
                             finish();
                     }
                 }
