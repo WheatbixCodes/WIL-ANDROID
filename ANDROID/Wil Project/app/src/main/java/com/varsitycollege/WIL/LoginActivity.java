@@ -57,6 +57,13 @@ binding.loginBtn.setOnClickListener(new View.OnClickListener() {
         validateData();
     }
 });
+binding.forgotTv.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        startActivity(new Intent(LoginActivity.this,ForgotPassword.class));
+    }
+});
+
     }
 private String password = "", email = "";
     private void validateData() {

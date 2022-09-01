@@ -5,6 +5,7 @@ public class Iniatives {
     private String money;
 
 
+
     public Iniatives() {
 
     }

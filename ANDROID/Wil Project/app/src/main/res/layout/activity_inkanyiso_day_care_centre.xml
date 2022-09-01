@@ -5,8 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CollaborationActivity">
+    tools:context=".InkanyisoDayCareCentre">
 
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/imagesl"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:iss_period="1000"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="10"
+                app:iss_delay="1000"
+                app:iss_title_background="@drawable/inkanyiso"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <RelativeLayout
 
@@ -30,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Intiatives"
+            android:text="Inkanyiso Day Care Centre"
             android:textColor="@color/white"
             android:textSize="23sp"
             android:textStyle="italic" />
@@ -38,14 +61,7 @@
     </RelativeLayout>
 
     <!-- This immage should be an image of Sithunjwana Schools -->
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo"
-        android:layout_gravity="top"
-        android:layout_marginLeft="45dp"
-        />
+
 
     <TextView
         android:id="@+id/txt1"
@@ -57,22 +73,6 @@
         android:layout_margin="3dp"
         android:text="Sinthunjwana schools is to help children by providing to the community ETC ETC LIST WHAT INITIATIVE IS AOUT " />
 
-    <TextView
-        android:id="@+id/txt2"
-        style="@style/MaterialAlertDialog.Material3.Title.Icon"
-        android:layout_width="329dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-
-        android:layout_margin="3dp"
-        android:text="Give a longer list of what they are about and how they have assisted people in the past using their service schools " />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        />
-
 
     <TextView
         android:id="@+id/txt4"
@@ -82,7 +82,7 @@
         android:layout_gravity="center"
 
         android:layout_margin="5dp"
-        android:text="This RecyclerView should be RecyclerView or listview and it should list and contain all of the items needed by Sithunjwana Schools" />
+        android:text="This \n RecyclerView should be RecyclerView or listview and it should list and contain all of the items needed by Sithunjwana Schools" />
 
     <TextView
         android:id="@+id/txt3"
@@ -107,17 +107,32 @@
         android:text="Donate Money"
         android:textColor="@android:color/white" />
 
+
     <Button
         android:id="@+id/btnCollab"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
 
-        android:layout_margin="3dp"
         android:layout_gravity="center"
+        android:layout_margin="3dp"
 
         android:background="@color/black"
         android:text="Collaborate (Item Or Contact)"
         android:textColor="@android:color/white" />
 
+    <Button
+        android:id="@+id/btnItems"
+        style="@style/MaterialAlertDialog.Material3.Title.Icon"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+
+        android:background="@color/black"
+        android:text="View Item List"
+        android:textColor="@android:color/white" />
+
 </LinearLayout>
+

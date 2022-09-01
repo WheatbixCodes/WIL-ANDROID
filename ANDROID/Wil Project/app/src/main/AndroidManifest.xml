@@ -17,6 +17,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
+            android:name=".ItemList"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Collab"
+            android:exported="false" />
+        <activity
+            android:name=".Employability_life_skills_training"
+            android:exported="false" />
+        <activity
+            android:name=".Employability_Life"
+            android:exported="false" />
+        <activity
+            android:name=".Thandi_House"
+            android:exported="false" />
+        <activity
+            android:name=".Sithunjwana_full_service_school"
+            android:exported="false" />
+        <activity
+            android:name=".Inkanyiso"
+            android:exported="false" />
+        <activity
             android:name=".Payments"
             android:exported="false" />
         <activity

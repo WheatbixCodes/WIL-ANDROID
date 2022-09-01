@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ServiceSchool">
+    tools:context=".CollaborationActivity">
 
 
     <androidx.cardview.widget.CardView
@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Intiatives"
+            android:text="Employability Life Skills"
             android:textColor="@color/white"
             android:textSize="23sp"
             android:textStyle="italic" />

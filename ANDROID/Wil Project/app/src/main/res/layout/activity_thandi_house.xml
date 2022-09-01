@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ServiceSchool">
-
+    tools:context=".Thandi_House">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -28,7 +27,7 @@
                 app:iss_delay="1000"
                 app:iss_title_background="@drawable/inkanyiso"/>
 
-        </LinearLayout>
+</LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <RelativeLayout
@@ -53,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Intiatives"
+            android:text="Thandi house"
             android:textColor="@color/white"
             android:textSize="23sp"
             android:textStyle="italic" />
@@ -135,3 +134,4 @@
         android:textColor="@android:color/white" />
 
 </LinearLayout>
+
