@@ -4,10 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-<<<<<<< Updated upstream
-=======
+
 import android.view.View;
->>>>>>> Stashed changes
+
 import android.widget.Button;
 
 public class InitiativeActivity extends AppCompatActivity {
@@ -84,15 +83,12 @@ public class InitiativeActivity extends AppCompatActivity {
 
     }
 
-<<<<<<< Updated upstream
+
     private void Navigate()
     {
         startActivity(new Intent(InitiativeActivity.this, SplashActivity.class));
     }
 }
-=======
-
-        }
 
 
 
@@ -109,4 +105,7 @@ public class InitiativeActivity extends AppCompatActivity {
 
 
 
->>>>>>> Stashed changes
+
+
+
+
