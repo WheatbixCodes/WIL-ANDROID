@@ -6,4 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".aboutEmployability">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_rect01">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="49dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:contentDescription="backBtn"
+
+            android:padding="10dp"
+            android:src="@drawable/ic_back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="About Employability"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:srcCompat="@drawable/employability"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        style="@style/MaterialAlertDialog.Material3.Title.Icon"
+        android:layout_width="388dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+
+        android:layout_margin="3dp"
+        android:text="- Establishing community gardens run by women in Molweni"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <TextView
+        android:id="@+id/txt3"
+        style="@style/MaterialAlertDialog.Material3.Title.Icon"
+        android:layout_width="388dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+
+        android:layout_margin="3dp"
+        android:text="- Establishing community gardens run by women in Molweni"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="318dp" />
+
+    <TextView
+        android:id="@+id/txt1"
+        style="@style/MaterialAlertDialog.Material3.Title.Icon"
+        android:layout_width="381dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+
+        android:layout_margin="3dp"
+        android:text="Over the past 3 years Khulisani and EmployAbility in partnership with several clients have raised over
+R500 000 for communities in need. We have assisted with the following projects:
+"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="162dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
