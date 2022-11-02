@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a33e8a9-e5e6-4f0d-a19e-11d0694db0c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/aboutEmployability.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/res/layout/activity_about_employability.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/CollaborationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/CollaborationActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +21,9 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Wheatbix\.android\avd\Pixel_5_API_31.avd]" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Cso0WnmHEgp1wW0E987H1E5ZdV" />
   <component name="ProjectViewState">
@@ -29,7 +36,7 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ANDROID/Wil Project/build.gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ANDROID/Wil Project" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
