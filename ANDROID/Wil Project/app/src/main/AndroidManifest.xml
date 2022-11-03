@@ -17,6 +17,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
+            android:name=".Sithunjwana_List"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".aboutEmployability"
             android:exported="false">
             <meta-data
@@ -35,9 +42,7 @@
         <activity
             android:name=".Employability_life_skills_training"
             android:exported="false" />
-        <activity
-            android:name=".Employability_Life"
-            android:exported="false" />
+
         <activity
             android:name=".Thandi_House"
             android:exported="false" />
