@@ -45,6 +45,7 @@ firebaseAuth= FirebaseAuth.getInstance();
         progressDialog.setTitle("Please be patient");
         progressDialog.setCanceledOnTouchOutside(false);
 
+
         binding.noAccountTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

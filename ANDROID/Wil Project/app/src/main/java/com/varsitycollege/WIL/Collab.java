@@ -22,8 +22,13 @@ public class Collab extends AppCompatActivity {
         setContentView(R.layout.activity_collab);
         binding=ActivityCollabBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        imgBack = (ImageView) findViewById(R.id.imgBack);
 
+        binding.Backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         binding.btnsubmitEmail.setOnClickListener(new View.OnClickListener() {
             @Override

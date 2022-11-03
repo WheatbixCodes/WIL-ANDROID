@@ -108,4 +108,7 @@ public class InitiativeActivity extends AppCompatActivity {
 
 
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes

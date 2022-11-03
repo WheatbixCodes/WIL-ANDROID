@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a33e8a9-e5e6-4f0d-a19e-11d0694db0c8" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/aboutEmployability.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/res/layout/activity_about_employability.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -12,6 +13,20 @@
       <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/res/values/strings.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/texttospeech.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/res/layout/activity_texttospeech.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/Collab.java" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/Collab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/Employability_life_skills_training.java" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/Employability_life_skills_training.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/InitiativeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/InitiativeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/InkanyisoDayCareCentre.java" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/InkanyisoDayCareCentre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/Sithunjwana_full_service_school.java" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/Sithunjwana_full_service_school.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/Thandi_House.java" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/java/com/varsitycollege/WIL/Thandi_House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/res/layout/activity_collab.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ANDROID/Wil Project/app/src/main/res/layout/activity_collab.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
