@@ -30,6 +30,7 @@ firebaseAuth= FirebaseAuth.getInstance();
             //start main
                 checkUser();
 
+
         }
     },1000);// 2000 means 2 secs
 

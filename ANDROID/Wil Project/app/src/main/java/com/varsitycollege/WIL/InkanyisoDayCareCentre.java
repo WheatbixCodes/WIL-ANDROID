@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -27,24 +28,30 @@ public class InkanyisoDayCareCentre extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inkanyiso_day_care_centre);
 
-        imageSlider= findViewById(R.id.imagesl);
+        imageSlider = findViewById(R.id.imagesl);
 
 
         ArrayList<SlideModel> slideModels = new ArrayList<>();
         slideModels.add(new SlideModel(R.drawable.image1, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.image2, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.image3, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.image4,ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.image4, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.image4, ScaleTypes.FIT));
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
 
-        binding.backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
-
-
+        //binding.backBtn.setOnClickListener(new View.OnClickListener() {
+        //@Override
+        //public void onClick(View v) {
+        //      onBackPressed();
+        // }
+        // });
     }
+        public void collab(View view)
+        {
+            Intent intent = new Intent(InkanyisoDayCareCentre.this, Collab.class);
+            startActivity(intent);
+        }
+
+
+
 }

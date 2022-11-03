@@ -2,7 +2,9 @@ package com.varsitycollege.WIL;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
@@ -13,6 +15,7 @@ import com.varsitycollege.WIL.databinding.ActivitySithunjwanaFullServiceSchoolBi
 import java.util.ArrayList;
 
 public class Employability_life_skills_training extends AppCompatActivity {
+
     private ActivityEmployabilityLifeSkillsTrainingBinding binding;
     private ImageSlider imageSlider;
 
@@ -31,5 +34,11 @@ public class Employability_life_skills_training extends AppCompatActivity {
         slideModels.add(new SlideModel(R.drawable.image4,ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.image4, ScaleTypes.FIT));
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
+    }
+
+    public void collab1(View view)
+    {
+        Intent intent = new Intent(Employability_life_skills_training.this, Collab.class);
+        startActivity(intent);
     }
 }

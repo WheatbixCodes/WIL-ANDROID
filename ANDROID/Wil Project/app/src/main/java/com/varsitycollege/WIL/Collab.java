@@ -53,12 +53,12 @@ if (intent.resolveActivity(getPackageManager()) != null){
             }
         });
 
-        imgBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                back();
-            }
-        });
+        //imgBack.setOnClickListener(new View.OnClickListener() {
+           // @Override
+           // public void onClick(View view) {
+            //    back();
+          //  }
+        //});
     }
 
     private void back() {

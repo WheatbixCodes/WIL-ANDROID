@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:orientation="vertical"
     tools:context=".CollaborationActivity">
 
@@ -11,22 +12,23 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <com.denzcoskun.imageslider.ImageSlider
                 android:id="@+id/imagesl"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                app:iss_period="1000"
                 app:iss_auto_cycle="true"
                 app:iss_corner_radius="10"
                 app:iss_delay="1000"
-                app:iss_title_background="@drawable/inkanyiso"/>
+                app:iss_period="1000"
+                app:iss_title_background="@drawable/inkanyiso" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -100,8 +102,8 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
 
-        android:layout_margin="15dp"
         android:layout_gravity="center"
+        android:layout_margin="15dp"
 
         android:background="@color/black"
         android:text="Donate Money"
@@ -113,7 +115,7 @@
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-
+        android:onClick="collab1"
         android:layout_gravity="center"
         android:layout_margin="3dp"
 

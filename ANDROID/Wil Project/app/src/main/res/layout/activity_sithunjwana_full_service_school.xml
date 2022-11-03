@@ -118,6 +118,7 @@
         android:layout_margin="3dp"
 
         android:background="@color/black"
+        android:onClick="collab"
         android:text="Collaborate (Item Or Contact)"
         android:textColor="@android:color/white" />
 
@@ -131,6 +132,7 @@
         android:layout_margin="3dp"
 
         android:background="@color/black"
+        android:onClick="items"
         android:text="View Item List"
         android:textColor="@android:color/white" />
 
