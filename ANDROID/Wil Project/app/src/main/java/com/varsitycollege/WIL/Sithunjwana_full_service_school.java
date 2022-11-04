@@ -23,7 +23,7 @@ public class Sithunjwana_full_service_school extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sithunjwana_full_service_school);
-        //binding= ActivitySithunjwanaFullServiceSchoolBinding.inflate(getLayoutInflater());
+        binding= ActivitySithunjwanaFullServiceSchoolBinding.inflate(getLayoutInflater());
         imageSlider= findViewById(R.id.imagesl);
 
         ArrayList<SlideModel> slideModels = new ArrayList<>();
@@ -34,13 +34,19 @@ public class Sithunjwana_full_service_school extends AppCompatActivity {
         slideModels.add(new SlideModel(R.drawable.image11, ScaleTypes.FIT));
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
 
-        //binding.backBtn.setOnClickListener(new View.OnClickListener() {
-          //  @Override
-            //public void onClick(View v) {
-              //  onBackPressed();
-            //}
-        //});
+        binding.backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
+    }
+
+    public void back(View view)
+    {
+        Intent intent = new Intent(Sithunjwana_full_service_school.this, InitiativeActivity.class);
+        startActivity(intent);
     }
 
     public void items(View view)

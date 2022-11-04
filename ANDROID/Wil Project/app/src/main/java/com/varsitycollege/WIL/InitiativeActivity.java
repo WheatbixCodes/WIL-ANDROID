@@ -14,6 +14,7 @@ public class InitiativeActivity extends AppCompatActivity {
     Button btnSith;
     Button btnThandi;
     Button btnEmploy;
+    Button btnSkills;
 
 
     Button backBtn;
@@ -23,9 +24,10 @@ public class InitiativeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_initiative);
         btnKanyiso = (Button) findViewById(R.id.btnKanyiso);
+        btnSkills = (Button) findViewById(R.id.btnSkills);
         btnSith = (Button) findViewById(R.id.btnSith);
         btnThandi = (Button) findViewById(R.id.btnThandi);
-        btnEmploy = (Button) findViewById(R.id.btnEmploy);
+        btnEmploy = (Button) findViewById(R.id.btnLearn);
 
         btnEmploy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,7 +43,12 @@ public class InitiativeActivity extends AppCompatActivity {
             }
         });
 
-
+       btnSkills.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               openLife();
+           }
+       });
 
         btnKanyiso.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,7 +86,12 @@ public class InitiativeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Sithunjwana_full_service_school.class);
         startActivity(intent);
 
+    }
 
+    public void openLife()
+    {
+        Intent intent = new Intent(this, LifeSkillsTraining.class);
+        startActivity(intent);
 
     }
 

@@ -52,6 +52,12 @@ public class InkanyisoDayCareCentre extends Activity {
             startActivity(intent);
         }
 
+    public void back(View view)
+    {
+        Intent intent = new Intent(InkanyisoDayCareCentre.this, InitiativeActivity.class);
+        startActivity(intent);
+    }
+
 
 
 }

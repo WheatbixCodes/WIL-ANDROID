@@ -46,6 +46,7 @@
             android:background="@null"
             android:contentDescription="backBtn"
 
+            android:onClick="back"
             android:padding="10dp"
             android:src="@drawable/ic_back_white" />
 
@@ -69,10 +70,10 @@
         android:layout_width="329dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-
+        android:textSize="@dimen/_13sdp"
+        android:text="The Inkanyiso Daycare Centre is based in the township of Mpophomeni in KZN.  The centre was started by Thandi Ntombela in 1999 and it is named after her son who had a disability."
         android:layout_margin="3dp"
-        android:text="Sinthunjwana schools is to help children by providing to the community ETC ETC LIST WHAT INITIATIVE IS AOUT " />
-
+        />
 
     <TextView
         android:id="@+id/txt4"
@@ -80,19 +81,9 @@
         android:layout_width="329dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-
+        android:textSize="@dimen/_13sdp"
         android:layout_margin="5dp"
-        android:text="This \n RecyclerView should be RecyclerView or listview and it should list and contain all of the items needed by Sithunjwana Schools" />
-
-    <TextView
-        android:id="@+id/txt3"
-        style="@style/MaterialAlertDialog.Material3.Title.Icon"
-        android:layout_width="329dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-
-        android:layout_margin="15dp"
-        android:text="Give a longer list of what they are about and how they have assisted people in the past using their service schools and list they can help by doating money or collaborating / donating items" />
+        android:text="The centre provides day care for children with special needs and well as training for parents of children with disabilities. In 2022 EmployAbility and Khulisani were able to raise funding to fix the roof that was leaking, repair the ceiling boards, paint the exterior of the classroom and provide a salary for a teacher assistant." />
 
     <Button
         android:id="@+id/btnMoney"
@@ -100,7 +91,8 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
 
-        android:layout_margin="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
         android:layout_gravity="center"
 
         android:background="@color/black"
@@ -115,7 +107,8 @@
         android:layout_height="wrap_content"
 
         android:layout_gravity="center"
-        android:layout_margin="3dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
 
         android:background="@color/black"
         android:onClick="collab"
@@ -129,9 +122,11 @@
         android:layout_height="wrap_content"
 
         android:layout_gravity="center"
-        android:layout_margin="3dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
 
         android:background="@color/black"
+
         android:text="View Item List"
         android:textColor="@android:color/white" />
 

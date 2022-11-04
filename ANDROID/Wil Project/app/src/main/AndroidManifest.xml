@@ -16,7 +16,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
-
+        <activity
+            android:name=".LifeSkillsTraining"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".texttospeech"
             android:exported="false" />
@@ -46,7 +52,6 @@
         <activity
             android:name=".Employability_life_skills_training"
             android:exported="false" />
-
         <activity
             android:name=".Thandi_House"
             android:exported="false" />
@@ -90,8 +95,6 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
-
             </intent-filter>
         </activity>
     </application>
