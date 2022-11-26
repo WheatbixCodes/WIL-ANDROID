@@ -64,13 +64,17 @@
     <!-- This immage should be an image of Sithunjwana Schools -->
 
 
-    <ImageView
-        android:id="@+id/iconIv"
-        android:layout_width="270dp"
-        android:layout_height="140dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtfirst"
+        style="@style/MaterialAlertDialog.Material3.Title.Icon"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_13sdp"
+        android:layout_margin="5dp"
+        android:text="Employability’s main focus since it was established in 2004 has been to assist individuals with intellectual disabilities to gain access to the mainstream labour market. It became apparent that many young persons from socio-economically disadvantaged communities would benefit from basic life skills training " />
+
 
     <TextView
         android:id="@+id/txt4"
@@ -80,7 +84,7 @@
         android:layout_gravity="center"
         android:textSize="@dimen/_13sdp"
         android:layout_margin="5dp"
-        android:text="Employability has been providing a 12-month training programme for youth exiting special needs schools. Helping to equip them with the skills necessary to thrive in a working environment" />
+        android:text="Employability has been providing a 12-month training programme for youth exiting special needs schools. Helping to equip them with the life and literary skills necessary to thrive in a working environment" />
 
     <Button
         android:id="@+id/btnMoney"

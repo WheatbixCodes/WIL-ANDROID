@@ -15,6 +15,7 @@ public class InitiativeActivity extends AppCompatActivity {
     Button btnThandi;
     Button btnEmploy;
     Button btnSkills;
+    Button btnSpeech;
 
 
     Button backBtn;
@@ -28,6 +29,7 @@ public class InitiativeActivity extends AppCompatActivity {
         btnSith = (Button) findViewById(R.id.btnSith);
         btnThandi = (Button) findViewById(R.id.btnThandi);
         btnEmploy = (Button) findViewById(R.id.btnLearn);
+        btnSpeech = (Button) findViewById(R.id.btnSpeech);
 
         btnEmploy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +65,12 @@ public class InitiativeActivity extends AppCompatActivity {
                 openSith();
             }
         });
+        btnSpeech.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openSpeech();
+            }
+        });
     }
 
     private void openEmployability() {
@@ -93,6 +101,11 @@ public class InitiativeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LifeSkillsTraining.class);
         startActivity(intent);
 
+    }
+    public void openSpeech()
+    {
+        Intent intent = new Intent(this, SpeechTherapy.class);
+        startActivity(intent);
     }
 
 
