@@ -17,6 +17,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
+            android:name=".Testing_neumorphism"
+            android:exported="false" />
+        <activity
+            android:name=".List_Employability"
+            android:exported="false" />
+        <activity
+            android:name=".List_Sithunjwana"
+            android:exported="false" />
+        <activity
+            android:name=".List_Inkanyiso"
+            android:exported="false" />
+        <activity
+            android:name=".LIst_Thandi"
+            android:exported="false" />
+        <activity
+            android:name=".About_Socials"
+            android:exported="false" />
+        <activity
             android:name=".LifeSkillsTraining"
             android:exported="false">
             <meta-data

@@ -70,28 +70,9 @@
         android:layout_gravity="center"
 
         android:layout_margin="3dp"
-        android:text="Sinthunjwana schools is to help children by providing to the community ETC ETC LIST WHAT INITIATIVE IS AOUT " />
+        android:text="handi House is a project based in Pietermaritzburg, KwaZulu-Natal. We offer a family centred environment for abused, neglected, abandoned and disabled babies as well as teenage mothers and their children.
+Thandi House has been in operation since 2009, caring for between 15 and 20 children at any given time, focusing strongly on education, physical and emotional development. Most children at Thandi House are placed into long-term care and their ages range from birth to 21 years and beyond. Long term care means that these children are permanently placed and Thandi House raises them as brothers and sisters. We also care for all our children into adulthood, ensuring quality tertiary education and support as young adults. " />
 
-
-    <TextView
-        android:id="@+id/txt4"
-        style="@style/MaterialAlertDialog.Material3.Title.Icon"
-        android:layout_width="329dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-
-        android:layout_margin="5dp"
-        android:text="This \n RecyclerView should be RecyclerView or listview and it should list and contain all of the items needed by Sithunjwana Schools" />
-
-    <TextView
-        android:id="@+id/txt3"
-        style="@style/MaterialAlertDialog.Material3.Title.Icon"
-        android:layout_width="329dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-
-        android:layout_margin="15dp"
-        android:text="Give a longer list of what they are about and how they have assisted people in the past using their service schools and list they can help by doating money or collaborating / donating items" />
 
     <Button
         android:id="@+id/btnMoney"

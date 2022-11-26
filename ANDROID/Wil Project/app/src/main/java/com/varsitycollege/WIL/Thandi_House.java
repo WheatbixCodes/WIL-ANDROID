@@ -17,6 +17,7 @@ import java.util.ArrayList;
 
 public class Thandi_House extends AppCompatActivity {
 Button btnCollab;
+   Button btnItems;
     private ActivityThandiHouseBinding binding;
 private ImageSlider imageSlider;
     @Override
@@ -35,8 +36,15 @@ private ImageSlider imageSlider;
         slideModels.add(new SlideModel(R.drawable.image3, ScaleTypes.FIT));
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
 
-
+        btnItems = (Button) findViewById(R.id.btnItems);
         btnCollab = (Button) findViewById(R.id.btnCollab);
+
+        binding.btnItems.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openThandilist();
+            }
+        });
         binding.backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,6 +60,10 @@ private ImageSlider imageSlider;
         });
     }
 
+    private void openThandilist() {
+        Intent intent = new Intent(this,LIst_Thandi.class);
+        startActivity(intent);
+    }
 
 
     private void openCollab() {
