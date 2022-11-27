@@ -3,6 +3,7 @@ package com.varsitycollege.WIL;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -41,15 +42,22 @@ public class LifeSkillsTraining extends AppCompatActivity {
         btnMoney = (Button) findViewById(R.id.btnMoney);
 
         btnCollab = (Button) findViewById(R.id.btnCollab);
+
+
         binding.btnMoney.setOnClickListener(new View.OnClickListener() {
 
 
 
             @Override
             public void onClick(View v) {
-                openDonations();
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("http://www.google.com"));
+                startActivity(intent);
             }
         });
+
         binding.btnItems.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
