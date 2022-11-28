@@ -51,12 +51,22 @@
         />
 
     <TextView
+        android:id="@+id/usernameTxt"
+        style="@style/MaterialAlertDialog.Material3.Title.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_13sdp"
+        android:layout_margin="5dp"
+        android:text="" />
+
+    <TextView
         android:id="@+id/txt1"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-
+        android:textSize="@dimen/_13sdp"
         android:layout_margin="5dp"
         android:text="Listed below are Employability's various initiatives" />
 
@@ -66,9 +76,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-
+        android:textSize="@dimen/_13sdp"
         android:layout_margin="5dp"
-        android:text="that they work with and assist in different ways" />
+        android:text="Please click on any to view more info on the project" />
 
     <Button
         android:id="@+id/btnSkills"
@@ -76,7 +86,7 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="5dp"
 
         android:layout_marginStart="15dp"
         android:textSize="@dimen/_13sdp"
@@ -160,7 +170,15 @@
     <include
         layout="@layout/footer"
         android:layout_width="430dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="LOG OUT"
+
         />
 
 </LinearLayout>

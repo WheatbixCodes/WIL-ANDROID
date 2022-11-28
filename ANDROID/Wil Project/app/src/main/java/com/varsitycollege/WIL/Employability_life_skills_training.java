@@ -37,10 +37,7 @@ Button btnMoney;
         slideModels.add(new SlideModel(R.drawable.image4, ScaleTypes.FIT));
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
         btnMoney = (Button) findViewById(R.id.btnMoney);
-        binding.btnMoney.setOnClickListener(new View.OnClickListener() {
-
-
-
+        /*binding.btnMoney.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -49,7 +46,7 @@ Button btnMoney;
                 intent.setData(Uri.parse("http://www.google.com"));
                 startActivity(intent);
             }
-        });
+        });*/
 
     }
 

@@ -8,6 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import android.widget.Button;
+import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class InitiativeActivity extends AppCompatActivity {
     Button btnKanyiso;
@@ -16,20 +20,45 @@ public class InitiativeActivity extends AppCompatActivity {
     Button btnEmploy;
     Button btnSkills;
     Button btnSpeech;
+    Button Logout;
+    TextView displayName;
+
+    private FirebaseAuth auth;
+    private FirebaseUser user;
 
 
     Button backBtn;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_initiative);
+        Logout = (Button) findViewById(R.id.btnLogout);
         btnKanyiso = (Button) findViewById(R.id.btnKanyiso);
         btnSkills = (Button) findViewById(R.id.btnSkills);
         btnSith = (Button) findViewById(R.id.btnSith);
         btnThandi = (Button) findViewById(R.id.btnThandi);
         btnEmploy = (Button) findViewById(R.id.btnLearn);
         btnSpeech = (Button) findViewById(R.id.btnSpeech);
+        displayName = findViewById(R.id.usernameTxt);
+
+        auth = FirebaseAuth.getInstance();
+        user = auth.getCurrentUser();
+
+        String name = auth.getCurrentUser().getDisplayName();
+        String email = user.getEmail();
+
+        displayName.setText("Welcome to the Employability app, " + email);
+
+        Logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                logOut();
+            }
+        });
 
         btnEmploy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,7 +129,6 @@ public class InitiativeActivity extends AppCompatActivity {
     {
         Intent intent = new Intent(this, LifeSkillsTraining.class);
         startActivity(intent);
-
     }
     public void openSpeech()
     {
@@ -108,6 +136,12 @@ public class InitiativeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void logOut()
+    {
+        auth.signOut();
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
 
     private void Navigate()
     {
