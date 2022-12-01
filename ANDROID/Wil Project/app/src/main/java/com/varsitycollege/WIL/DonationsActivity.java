@@ -18,13 +18,6 @@ public class DonationsActivity extends AppCompatActivity {
         submitDonation = (Button) findViewById(R.id.submitDonation);
         btnSith = (Button) findViewById(R.id.btnSith);
 
-
-
-
-
-
-
-
         submitDonation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

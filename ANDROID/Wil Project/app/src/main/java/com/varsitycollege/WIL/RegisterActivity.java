@@ -27,11 +27,6 @@ public class RegisterActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
       private ProgressDialog progressDialog;
 
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
