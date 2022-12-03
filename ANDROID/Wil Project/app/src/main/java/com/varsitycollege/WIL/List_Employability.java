@@ -25,7 +25,6 @@ public class List_Employability extends AppCompatActivity {
     private ArrayList<String> categoryList;
     private ListView listView;
     private ArrayAdapter <String> categoryArrayAdapter;
-    public static String catSelected;
     public static String categoryName;
 
     @Override
