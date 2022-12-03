@@ -30,11 +30,11 @@ public class Sithunjwana_full_service_school extends AppCompatActivity {
         imageSlider= findViewById(R.id.imagesl);
         btnMoney = (Button) findViewById(R.id.btnMoney);
         ArrayList<SlideModel> slideModels = new ArrayList<>();
-        slideModels.add(new SlideModel(R.drawable.image5, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.image7, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.image8, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.image10,ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.image11, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.fooddonations1, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.image9, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.image3, ScaleTypes.FIT));
+        /*slideModels.add(new SlideModel(R.drawable.image10,ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.image11, ScaleTypes.FIT));*/
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
 
         
