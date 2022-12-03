@@ -21,11 +21,13 @@ public class Employability_life_skills_training extends AppCompatActivity {
     private ActivityEmployabilityLifeSkillsTrainingBinding binding;
     private ImageSlider imageSlider;
 Button btnMoney;
+Button btnItems;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employability_life_skills_training);
 
+        btnItems = findViewById(R.id.btnItems);
         imageSlider= findViewById(R.id.imagesl);
 
 
@@ -48,7 +50,16 @@ Button btnMoney;
             }
         });*/
 
+
+        btnItems.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent donateInt = new Intent(Employability_life_skills_training.this, List_Employability.class);
+                startActivity(donateInt);
+            }
+        });
     }
+
 
 
 
@@ -57,5 +68,7 @@ Button btnMoney;
         Intent intent = new Intent(Employability_life_skills_training.this, Collab.class);
         startActivity(intent);
     }
+
+
 
 }

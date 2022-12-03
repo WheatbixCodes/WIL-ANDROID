@@ -80,7 +80,7 @@ public class LifeSkillsTraining extends AppCompatActivity {
     }
 
     private void openDonations() {
-        Intent intent = new Intent(this,DonationsActivity.class);
+        Intent intent = new Intent(this, DonationsActivity.class);
         startActivity(intent);
     }
 
@@ -91,7 +91,7 @@ public class LifeSkillsTraining extends AppCompatActivity {
 
 
     private void openCollab() {
-        Intent intent = new Intent(this,Collab.class);
+        Intent intent = new Intent(this, Collab.class);
         startActivity(intent);
     }
 }
