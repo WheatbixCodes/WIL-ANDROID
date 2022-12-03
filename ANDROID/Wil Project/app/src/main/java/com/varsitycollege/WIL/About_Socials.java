@@ -11,6 +11,7 @@ import android.widget.ImageView;
 
 public class About_Socials extends AppCompatActivity {
 
+    //This says image view
     ImageView instagram, facebook;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
