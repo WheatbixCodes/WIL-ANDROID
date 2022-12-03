@@ -57,7 +57,8 @@ public class SpeechTherapy extends AppCompatActivity {
         binding.btnItems.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(SpeechTherapy.this, List_Speech.class);
+                startActivity(intent);
             }
         });
 
@@ -69,11 +70,6 @@ public class SpeechTherapy extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void items(View view)
-    {
-        Intent intent = new Intent(SpeechTherapy.this, LIst_Thandi.class);
-        startActivity(intent);
-    }
 
     public void collab(View view)
     {
