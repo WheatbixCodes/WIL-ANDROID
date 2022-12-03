@@ -3,8 +3,11 @@ package com.varsitycollege.WIL;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -22,6 +25,7 @@ public class List_FoodDonations extends AppCompatActivity {
     private ListView listView;
     private ArrayAdapter<String> categoryArrayAdapter;
     public static String categoryName;
+    private Button backBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,7 @@ public class List_FoodDonations extends AppCompatActivity {
         setContentView(R.layout.activity_list_food_donations);
 
         listView = findViewById(R.id.list);
+        backBtn = findViewById(R.id.donationsBackBtnFood);
 
         categoryList = new ArrayList<>();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
@@ -52,6 +57,14 @@ public class List_FoodDonations extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
+            }
+        });
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent foodIntent = new Intent(List_FoodDonations.this, Sithunjwana_full_service_school.class);
+                startActivity(foodIntent);
             }
         });
     }

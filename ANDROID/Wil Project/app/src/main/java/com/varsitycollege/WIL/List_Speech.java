@@ -3,8 +3,11 @@ package com.varsitycollege.WIL;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -23,12 +26,14 @@ public class List_Speech extends AppCompatActivity {
     private ListView listView;
     private ArrayAdapter<String> categoryArrayAdapter;
     private static String categoryName;
+    private Button backBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_speech);
 
+        backBtn = findViewById(R.id.donationsBackBtnSpeech);
         listView = findViewById(R.id.list);
 
         categoryList = new ArrayList<>();
@@ -52,6 +57,14 @@ public class List_Speech extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
+            }
+        });
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent speechIntent = new Intent(List_Speech.this, SpeechTherapy.class);
+                startActivity(speechIntent);
             }
         });
     }

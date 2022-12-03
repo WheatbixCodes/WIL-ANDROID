@@ -40,7 +40,7 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/donationsBackBtnInk"
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:background="@drawable/shape_button01"

@@ -3,10 +3,12 @@ package com.varsitycollege.WIL;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -25,12 +27,15 @@ public class LIst_Thandi extends AppCompatActivity {
     private ListView listView;
     private ArrayAdapter <String> categoryArrayAdapter;
     private static String categoryName;
+    private Button backBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_thandi);
 
+
+        backBtn = findViewById(R.id.donationsBackBtnThandi);
         listView = findViewById(R.id.Thandilist);
 
         categoryList = new ArrayList<>();
@@ -54,6 +59,14 @@ public class LIst_Thandi extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
+            }
+        });
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent thandiIntent = new Intent(LIst_Thandi.this, Thandi_House.class);
+                startActivity(thandiIntent);
             }
         });
     }
