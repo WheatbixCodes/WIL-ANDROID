@@ -6,5 +6,7 @@
 
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
+    <string name="learn_2_earn_donations">Learn 2 Earn Donations</string>
+    <string name="thandi_house_donations">Thandi House Donations</string>
 
 </resources>
