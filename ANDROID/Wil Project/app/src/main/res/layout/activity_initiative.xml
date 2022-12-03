@@ -56,7 +56,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="@dimen/_13sdp"
+
+        android:textSize="@dimen/_12sdp"
         android:layout_margin="5dp"
         android:text="" />
 
@@ -80,21 +81,21 @@
         android:layout_margin="5dp"
         android:text="Please click on any to view more info on the project" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSkills"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
-
         android:layout_marginStart="15dp"
         android:textSize="@dimen/_13sdp"
-        android:background="@color/black"
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:text=" Life Skills Training "
         android:textColor="@android:color/white" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnThandi"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
@@ -103,11 +104,12 @@
         android:layout_marginTop="25dp"
         android:textSize="@dimen/_13sdp"
         android:layout_marginStart="15dp"
-        android:background="@color/black"
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:text="Thandi House"
         android:textColor="@android:color/white" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnKanyiso"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
@@ -116,12 +118,13 @@
         android:layout_marginTop="25dp"
 
         android:layout_marginStart="15dp"
-        android:background="@color/black"
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:textSize="@dimen/_13sdp"
         android:text="Inkanyiso Daycare Centre"
         android:textColor="@android:color/white" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSith"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
@@ -132,12 +135,13 @@
 
         android:layout_marginStart="15dp"
         android:textSize="@dimen/_13sdp"
-        android:background="@color/black"
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:text="Food Donations"
         android:textColor="@android:color/white" />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLearn"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
@@ -146,13 +150,14 @@
         android:layout_marginTop="25dp"
 
         android:layout_marginStart="15dp"
-        android:background="@color/black"
-        android:backgroundTint="@color/white"
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
+
         android:textSize="@dimen/_13sdp"
         android:text="Learn 2 Earn"
         android:textColor="@android:color/white" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSpeech"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
@@ -161,8 +166,9 @@
         android:layout_marginTop="25dp"
 
         android:layout_marginStart="15dp"
-        android:background="@color/black"
-        android:backgroundTint="@color/white"
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
+
         android:textSize="@dimen/_13sdp"
         android:text="Speech Therapy For Children"
         android:textColor="@android:color/white" />
@@ -170,15 +176,18 @@
     <include
         layout="@layout/footer"
         android:layout_width="430dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="103dp"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLogout"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="#88646c"
         android:text="LOG OUT"
-
+        android:textColor="@color/white"
         />
 
 </LinearLayout>

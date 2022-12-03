@@ -9,6 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Powered by StarTech Solutions "
+        android:layout_marginLeft="45dp"
         tools:layout_editor_absoluteX="224dp"
         tools:layout_editor_absoluteY="7dp" />
 
@@ -17,6 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="About Employability"
+
         style="@style/Widget.MaterialComponents.Button.TextButton"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -29,7 +29,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
             android:contentDescription="pic"
-            android:src="@drawable/logo" />
+            android:src="@drawable/employability" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -37,6 +37,7 @@
             android:layout_below="@id/iconIv"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
+
             android:fontFamily="sans-serif-condensed"
             android:text="Create New Account"
             android:textColor="@color/white"
@@ -46,9 +47,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="450dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="225dp"
+        android:layout_marginTop="240dp"
         android:layout_marginEnd="30dp">
 
         <RelativeLayout
@@ -73,7 +74,8 @@
                     android:hint="Name"
                     android:inputType="textPersonName|textCapWords"
                     android:padding="18dp"
-                    android:textColor="@color/gray01" />
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray01"/>
             </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -109,6 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/emailTil"
                 android:layout_marginTop="5dp"
+                app:hintEnabled="false"
                 app:passwordToggleEnabled="true">
 
                 <EditText
@@ -119,11 +122,12 @@
                     android:background="@drawable/shape_edittext01"
                     android:drawableStart="@drawable/ic_lock_gray"
                     android:drawablePadding="10dp"
-
+                    android:hint="Password"
                     android:inputType="textPassword"
                     android:padding="10dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gray01"
+
                     tools:ignore="SpeakableTextPresentCheck" />
 
 
@@ -159,16 +163,27 @@
 
 
             <!--Register Button-->
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/loginBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/cPasswordTil"
                 android:layout_marginTop="28dp"
                 android:background="@drawable/shape_button01"
+                android:backgroundTint="@color/employabilityThirdPink"
                 android:text="Register"
                 android:textColor="@color/white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loginBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="Powered by StarTech"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
         </RelativeLayout>
     </ScrollView>
+
 </RelativeLayout>

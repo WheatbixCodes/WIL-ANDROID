@@ -18,7 +18,7 @@
             android:layout_height="140dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
-            android:src="@drawable/logo" />
+            android:src="@drawable/employability" />
 
 
         <TextView
@@ -112,39 +112,36 @@
                 android:text="Forgot Password?"
                 android:textColor="@color/gray01" />
 
-            <ImageView
-                android:id="@+id/facebookIv"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_below="@id/loginBtn"
-                android:layout_alignLeft="@id/facebookIv"
-                android:layout_centerHorizontal="false"
+            <ImageButton
+                android:src="@drawable/face"
+                android:id="@+id/socialBtn"
                 android:layout_marginTop="40dp"
-                android:src="@drawable/facebook" />
-
-            <ImageView
-                android:id="@+id/google"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_below="@id/loginBtn"
-                android:layout_alignRight="@id/google"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="40dp"
-                android:src="@drawable/google" />
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_below="@id/loginBtn"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/socialBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Powered by StarTech"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
-
-
-
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/loginBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/forgotTv"
                 android:layout_marginTop="28dp"
                 android:background="@drawable/shape_button01"
+                android:backgroundTint="@color/employabilityThirdPink"
                 android:text="Login"
-            android:textColor="@color/white"/>
+                android:textColor="@color/white"/>
+
 </RelativeLayout>
     </ScrollView>
 
