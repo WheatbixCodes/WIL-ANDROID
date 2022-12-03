@@ -50,8 +50,11 @@ public class InitiativeActivity extends AppCompatActivity {
 
         String name = auth.getCurrentUser().getDisplayName();
         String email = user.getEmail();
+        int index = email.indexOf("@");
+        String substring = email.substring(0,index);
 
-        displayName.setText("Welcome to the Employability app, " + email);
+        //displayName.setText(email);
+        displayName.setText("Welcome to the Employability App, " + substring);
 
         Logout.setOnClickListener(new View.OnClickListener() {
             @Override

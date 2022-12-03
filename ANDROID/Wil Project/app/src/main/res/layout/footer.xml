@@ -17,7 +17,7 @@
         android:id="@+id/txtAbout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="About Employability"
+        android:text="   About StarTech"
 
         style="@style/Widget.MaterialComponents.Button.TextButton"
         />
