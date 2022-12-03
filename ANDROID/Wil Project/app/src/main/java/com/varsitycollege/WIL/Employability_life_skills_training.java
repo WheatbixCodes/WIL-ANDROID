@@ -50,7 +50,14 @@ Button btnMoney;
 
     }
 
-
+    public void google1(View view)
+    {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+        intent.setData(Uri.parse("http://www.google.com"));
+        startActivity(intent);
+    }
 
     public void collab1(View view)
     {
@@ -58,4 +65,13 @@ Button btnMoney;
         startActivity(intent);
     }
 
+    public void back1(View view)
+    {
+        Intent intent = new Intent(Employability_life_skills_training.this, InitiativeActivity.class);
+        startActivity(intent);
+    }
+    public void openLearnlist(View view) {
+        Intent intent = new Intent(this,LIst_Thandi.class);
+        startActivity(intent);
+    }
 }

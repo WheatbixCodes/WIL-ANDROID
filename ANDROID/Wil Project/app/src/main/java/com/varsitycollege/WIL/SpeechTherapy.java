@@ -43,7 +43,7 @@ public class SpeechTherapy extends AppCompatActivity {
         btnMoney = (Button) findViewById(R.id.btnMoney);
 
         btnCollab = (Button) findViewById(R.id.btnCollab);
-        binding.backBtn.setOnClickListener(new View.OnClickListener() {
+        /*binding.backBtn.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -59,23 +59,32 @@ public class SpeechTherapy extends AppCompatActivity {
             public void onClick(View v) {
 
             }
-        });
+        });*/
 
     }
 
-    public void back(View view)
+    public void openGoogle(View view)
+    {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+        intent.setData(Uri.parse("http://www.google.com"));
+        startActivity(intent);
+    }
+
+    public void backSpeech(View view)
     {
         Intent intent = new Intent(SpeechTherapy.this, InitiativeActivity.class);
         startActivity(intent);
     }
 
-    public void items(View view)
+    public void itemsSpeech(View view)
     {
         Intent intent = new Intent(SpeechTherapy.this, LIst_Thandi.class);
         startActivity(intent);
     }
 
-    public void collab(View view)
+    public void collabSpech(View view)
     {
         Intent intent = new Intent(SpeechTherapy.this, Collab.class);
         startActivity(intent);

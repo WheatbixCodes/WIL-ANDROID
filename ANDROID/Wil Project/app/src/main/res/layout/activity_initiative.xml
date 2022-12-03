@@ -55,6 +55,8 @@
         android:text="Please click on any to view more info on the project" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:id="@+id/btnSkills"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
@@ -63,8 +65,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginStart="15dp"
         android:textSize="@dimen/_13sdp"
-        android:background="@drawable/shape_button01"
-        android:backgroundTint="@color/employabilityThirdPink"
+
         android:text=" Life Skills Training "
         android:textColor="@android:color/white" />
 

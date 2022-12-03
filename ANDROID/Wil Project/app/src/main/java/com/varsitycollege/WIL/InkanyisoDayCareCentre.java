@@ -31,7 +31,6 @@ Button btnMoney;
 
         imageSlider = findViewById(R.id.imagesl);
 
-
         ArrayList<SlideModel> slideModels = new ArrayList<>();
         slideModels.add(new SlideModel(R.drawable.image1, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.image2, ScaleTypes.FIT));
@@ -41,10 +40,7 @@ Button btnMoney;
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
         btnMoney = (Button) findViewById(R.id.btnMoney);
 
-        binding.btnMoney.setOnClickListener(new View.OnClickListener() {
-
-
-
+        /*binding.btnMoney.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -53,13 +49,23 @@ Button btnMoney;
                 intent.setData(Uri.parse("http://www.google.com"));
                 startActivity(intent);
             }
-        });
+        });*/
+
         //binding.backBtn.setOnClickListener(new View.OnClickListener() {
         //@Override
         //public void onClick(View v) {
         //      onBackPressed();
         // }
         // });
+    }
+
+    public void google(View view)
+    {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+        intent.setData(Uri.parse("http://www.google.com"));
+        startActivity(intent);
     }
         public void collab(View view)
         {
