@@ -17,6 +17,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
+            android:name=".List_Speech"
+            android:exported="false" />
+        <activity
+            android:name=".List_FoodDonations"
+            android:exported="false" />
+        <activity
             android:name=".SpeechTherapy"
             android:exported="false">
             <meta-data

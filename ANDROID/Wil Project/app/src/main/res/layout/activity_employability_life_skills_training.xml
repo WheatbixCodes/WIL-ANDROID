@@ -111,7 +111,6 @@
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:onClick="collab1"
         android:layout_gravity="center"
         android:layout_margin="3dp"
 

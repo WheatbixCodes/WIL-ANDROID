@@ -31,6 +31,7 @@ Button btnMoney;
 
         imageSlider = findViewById(R.id.imagesl);
 
+
         ArrayList<SlideModel> slideModels = new ArrayList<>();
         slideModels.add(new SlideModel(R.drawable.daycare1, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.fooddonations2, ScaleTypes.FIT));
