@@ -118,6 +118,7 @@
                 android:layout_marginTop="40dp"
                 android:layout_centerHorizontal="true"
                 android:layout_width="65dp"
+                android:onClick="facebookOpen"
                 android:layout_height="65dp"
                 android:layout_below="@id/loginBtn"/>
 
