@@ -61,7 +61,7 @@ public class Sithunjwana_full_service_school extends AppCompatActivity {
 
         Intent intent = new Intent(Sithunjwana_full_service_school.this, List_FoodDonations.class);
 
-        Intent intent = new Intent(Sithunjwana_full_service_school.this, LIst_Thandi.class);
+        //Intent intent = new Intent(Sithunjwana_full_service_school.this, LIst_Thandi.class);
 
         startActivity(intent);
     }
