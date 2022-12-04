@@ -64,12 +64,12 @@ public class LifeSkillsTraining extends AppCompatActivity {
                 openThandilist();
             }
         });
-        binding.backBtn.setOnClickListener(new View.OnClickListener() {
+        /*binding.backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
             }
-        });
+        });*/
 
         btnCollab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,13 +79,19 @@ public class LifeSkillsTraining extends AppCompatActivity {
         });
     }
 
+    public void backBtnTraining(View view)
+    {
+        Intent intent = new Intent(this, InitiativeActivity.class);
+        startActivity(intent);
+    }
+
     private void openDonations() {
         Intent intent = new Intent(this, DonationsActivity.class);
         startActivity(intent);
     }
 
     private void openThandilist() {
-        Intent intent = new Intent(this,LIst_Thandi.class);
+        Intent intent = new Intent(this,List_Employability.class);
         startActivity(intent);
     }
 

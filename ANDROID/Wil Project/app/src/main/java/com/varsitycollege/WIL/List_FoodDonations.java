@@ -33,7 +33,7 @@ public class List_FoodDonations extends AppCompatActivity {
         setContentView(R.layout.activity_list_food_donations);
 
         listView = findViewById(R.id.list);
-        backBtn = findViewById(R.id.donationsBackBtnFood);
+        //backBtn = findViewById(R.id.donationsBackBtnFood);
 
         categoryList = new ArrayList<>();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
@@ -60,12 +60,17 @@ public class List_FoodDonations extends AppCompatActivity {
             }
         });
 
-        backBtn.setOnClickListener(new View.OnClickListener() {
+        /*backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent foodIntent = new Intent(List_FoodDonations.this, Sithunjwana_full_service_school.class);
                 startActivity(foodIntent);
             }
-        });
+        });*/
+    }
+    public void backBtnFood(View view)
+    {
+        Intent intent = new Intent(List_FoodDonations.this, Sithunjwana_full_service_school.class);
+        startActivity(intent);
     }
 }

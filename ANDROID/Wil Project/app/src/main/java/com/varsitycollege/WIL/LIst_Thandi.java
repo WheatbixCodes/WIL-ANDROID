@@ -35,7 +35,7 @@ public class LIst_Thandi extends AppCompatActivity {
         setContentView(R.layout.activity_list_thandi);
 
 
-        backBtn = findViewById(R.id.donationsBackBtnThandi);
+        //backBtn = findViewById(R.id.donationsBackBtnThandi);
         listView = findViewById(R.id.Thandilist);
 
         categoryList = new ArrayList<>();
@@ -62,12 +62,17 @@ public class LIst_Thandi extends AppCompatActivity {
             }
         });
 
-        backBtn.setOnClickListener(new View.OnClickListener() {
+        /*backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent thandiIntent = new Intent(LIst_Thandi.this, Thandi_House.class);
                 startActivity(thandiIntent);
             }
-        });
+        });*/
+    }
+    public void backBtnThandi(View view)
+    {
+        Intent intent = new Intent(LIst_Thandi.this, Thandi_House.class);
+        startActivity(intent);
     }
 }

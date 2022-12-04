@@ -127,7 +127,7 @@
 
 
         android:onClick="collab"
-        android:text="Collaborate (Item Or Contact)"
+        android:text="Collaborate and Contact"
         android:textColor="@android:color/white" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -144,7 +144,7 @@
 
 
         android:onClick="items"
-        android:text="View Item List"
+        android:text="View Item Donation List"
         android:textColor="@android:color/white" />
 
 </LinearLayout>

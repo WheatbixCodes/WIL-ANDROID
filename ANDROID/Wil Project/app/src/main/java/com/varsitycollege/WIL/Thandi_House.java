@@ -59,12 +59,12 @@ private ImageSlider imageSlider;
                 openThandilist();
             }
         });
-        binding.backBtn.setOnClickListener(new View.OnClickListener() {
+        /*binding.backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
             }
-        });
+        });*/
 
         btnCollab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,6 +72,11 @@ private ImageSlider imageSlider;
                 openCollab();
             }
         });
+    }
+
+    public void backThandi(View view) {
+        Intent intent = new Intent(this,InitiativeActivity.class);
+        startActivity(intent);
     }
 
     private void openThandilist() {

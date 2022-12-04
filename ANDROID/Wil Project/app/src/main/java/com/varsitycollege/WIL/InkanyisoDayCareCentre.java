@@ -74,6 +74,12 @@ Button btnMoney;
             startActivity(intent);
         }
 
+        public void openList(View view)
+        {
+            Intent intent = new Intent(this, List_Inkanyiso.class);
+            startActivity(intent);
+        }
+
     public void back(View view)
     {
         Intent intent = new Intent(InkanyisoDayCareCentre.this, InitiativeActivity.class);

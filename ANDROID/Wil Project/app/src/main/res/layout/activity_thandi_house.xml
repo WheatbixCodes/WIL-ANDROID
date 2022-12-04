@@ -44,7 +44,7 @@
             android:layout_height="48dp"
             android:background="@null"
             android:contentDescription="backBtn"
-
+            android:onClick="backThandi"
             android:padding="10dp"
             android:src="@drawable/ic_back_white" />
 
@@ -102,7 +102,7 @@ Thandi House has been in operation since 2009, caring for between 15 and 20 chil
         android:layout_margin="10dp"
 
 
-        android:text="Collaborate (Item Or Contact)"
+        android:text="Collaborate and Contact"
         android:textColor="@android:color/white" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -117,7 +117,7 @@ Thandi House has been in operation since 2009, caring for between 15 and 20 chil
         android:layout_margin="10dp"
 
 
-        android:text="View Item List"
+        android:text="View Item Donation List"
         android:textColor="@android:color/white" />
 
 </LinearLayout>

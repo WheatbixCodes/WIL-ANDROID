@@ -114,7 +114,7 @@
         android:layout_margin="3dp"
 
         android:onClick="collabSpech"
-        android:text="Collaborate (Item Or Contact)"
+        android:text="Collaborate and Contact"
         android:textColor="@android:color/white" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -129,7 +129,7 @@
         android:layout_margin="15dp"
 
         android:onClick="itemsSpeech"
-        android:text="View Item List"
+        android:text="View Item Donation List"
         android:textColor="@android:color/white" />
 
 </LinearLayout>

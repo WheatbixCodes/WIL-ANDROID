@@ -35,7 +35,7 @@ public class List_Inkanyiso<listView, arrayAdapter> extends AppCompatActivity {
         setContentView(R.layout.activity_list_inkanyiso);
 
         listView = findViewById(R.id.list);
-        backBtn = findViewById(R.id.donationsBackBtnInk);
+        //backBtn = findViewById(R.id.donationsBackBtnInk);
 
         categoryList = new ArrayList<>();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
@@ -62,12 +62,17 @@ public class List_Inkanyiso<listView, arrayAdapter> extends AppCompatActivity {
             }
         });
 
-        backBtn.setOnClickListener(new View.OnClickListener() {
+        /*backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent inkanyisoIntent = new Intent(List_Inkanyiso.this, InkanyisoDayCareCentre.class);
                 startActivity(inkanyisoIntent);
             }
-        });
+        });*/
+    }
+    public void backBtnInkanyiso(View view)
+    {
+        Intent intent = new Intent(this, InkanyisoDayCareCentre.class);
+        startActivity(intent);
     }
 }

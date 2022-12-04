@@ -81,7 +81,7 @@ public class SpeechTherapy extends AppCompatActivity {
 
     public void itemsSpeech(View view)
     {
-        Intent intent = new Intent(SpeechTherapy.this, LIst_Thandi.class);
+        Intent intent = new Intent(SpeechTherapy.this, List_Speech.class);
         startActivity(intent);
     }
 

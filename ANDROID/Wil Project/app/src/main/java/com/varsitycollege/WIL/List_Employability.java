@@ -35,7 +35,7 @@ public class List_Employability extends AppCompatActivity {
         setContentView(R.layout.activity_list_employability);
 
         listView = findViewById(R.id.list);
-        backBtn = findViewById(R.id.donationsBackBtnLtE);
+       // backBtn = findViewById(R.id.donationsBackBtnLtE);
 
         categoryList = new ArrayList<>();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
@@ -61,14 +61,20 @@ public class List_Employability extends AppCompatActivity {
             }
         });
 
-        backBtn.setOnClickListener(new View.OnClickListener() {
+        /*backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent employabilityIntent = new Intent(List_Employability.this, Employability_life_skills_training.class);
                 startActivity(employabilityIntent);
             }
-        });
+        });*/
 
 
+
+    }
+    public void backBtn(View view)
+    {
+        Intent intent = new Intent(List_Employability.this, LifeSkillsTraining.class);
+        startActivity(intent);
     }
 }

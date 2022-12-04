@@ -115,7 +115,7 @@
         android:layout_margin="3dp"
 
 
-        android:text="Collaborate (Item Or Contact)"
+        android:text="Collaborate and Contact"
         android:textColor="@android:color/white"
          />
 
@@ -131,7 +131,7 @@
         android:layout_margin="15dp"
         android:onClick="openLearnlist"
 
-        android:text="View Item List"
+        android:text="View Item Donation List"
         android:textColor="@android:color/white" />
 
 </LinearLayout>
