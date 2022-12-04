@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="@color/white"
-        android:text="@string/learn_2_earn_donations"
+        android:text="Life Skills Donations"
         android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +40,7 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/donationsBackBtnLife"
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:background="@drawable/shape_button01"
