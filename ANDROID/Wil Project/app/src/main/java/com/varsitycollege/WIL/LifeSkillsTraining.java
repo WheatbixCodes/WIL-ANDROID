@@ -31,11 +31,11 @@ public class LifeSkillsTraining extends AppCompatActivity {
 
 
         ArrayList<SlideModel> slideModels = new ArrayList<>();
-        slideModels.add(new SlideModel(R.drawable.image12, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.image5, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.image2, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.image4,ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.image3, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.image10, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.image6, ScaleTypes.FIT));
+        /*slideModels.add(new SlideModel(R.drawable.image4,ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.image3, ScaleTypes.FIT));*/
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
 
         btnItems = (Button) findViewById(R.id.btnItems);

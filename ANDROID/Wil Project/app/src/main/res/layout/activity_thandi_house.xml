@@ -74,7 +74,9 @@
 Thandi House has been in operation since 2009, caring for between 15 and 20 children at any given time, focusing strongly on education, physical and emotional development. Most children at Thandi House are placed into long-term care and their ages range from birth to 21 years and beyond. Long term care means that these children are permanently placed and Thandi House raises them as brothers and sisters. We also care for all our children into adulthood, ensuring quality tertiary education and support as young adults. " />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:id="@+id/btnMoney"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
@@ -83,12 +85,14 @@ Thandi House has been in operation since 2009, caring for between 15 and 20 chil
         android:layout_margin="10dp"
         android:layout_gravity="center"
 
-        android:background="@color/black"
+
         android:text="Donate Money"
         android:textColor="@android:color/white" />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:id="@+id/btnCollab"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
@@ -97,11 +101,13 @@ Thandi House has been in operation since 2009, caring for between 15 and 20 chil
         android:layout_gravity="center"
         android:layout_margin="10dp"
 
-        android:background="@color/black"
+
         android:text="Collaborate (Item Or Contact)"
         android:textColor="@android:color/white" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:id="@+id/btnItems"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
@@ -110,7 +116,7 @@ Thandi House has been in operation since 2009, caring for between 15 and 20 chil
         android:layout_gravity="center"
         android:layout_margin="10dp"
 
-        android:background="@color/black"
+
         android:text="View Item List"
         android:textColor="@android:color/white" />
 

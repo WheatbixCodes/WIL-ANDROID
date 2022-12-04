@@ -32,11 +32,11 @@ Button btnItems;
 
 
         ArrayList<SlideModel> slideModels = new ArrayList<>();
-        slideModels.add(new SlideModel(R.drawable.image1, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.image2, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.image3, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.image4,ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.image4, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.learn2earn1, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.image7, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.image8, ScaleTypes.FIT));
+        /*slideModels.add(new SlideModel(R.drawable.image4,ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.image4, ScaleTypes.FIT));*/
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
         btnMoney = (Button) findViewById(R.id.btnMoney);
         /*binding.btnMoney.setOnClickListener(new View.OnClickListener() {
@@ -60,7 +60,14 @@ Button btnItems;
         });
     }
 
-
+    public void google1(View view)
+    {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+        intent.setData(Uri.parse("http://www.google.com"));
+        startActivity(intent);
+    }
 
 
     public void collab1(View view)
@@ -69,6 +76,14 @@ Button btnItems;
         startActivity(intent);
     }
 
-
+    public void back1(View view)
+    {
+        Intent intent = new Intent(Employability_life_skills_training.this, InitiativeActivity.class);
+        startActivity(intent);
+    }
+    public void openLearnlist(View view) {
+        Intent intent = new Intent(this,LIst_Thandi.class);
+        startActivity(intent);
+    }
 
 }

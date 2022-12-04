@@ -86,7 +86,9 @@
         android:layout_margin="5dp"
         android:text="Employability has been providing a 12-month training programme for youth exiting special needs schools. Helping to equip them with the life and literary skills necessary to thrive in a working environment" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:id="@+id/btnMoney"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
@@ -96,12 +98,14 @@
         android:layout_marginStart="15dp"
         android:layout_gravity="center"
 
-        android:background="@color/black"
+
         android:text="Donate Money"
         android:textColor="@android:color/white" />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:id="@+id/btnCollab"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
@@ -111,12 +115,14 @@
         android:layout_marginTop="15dp"
         android:layout_marginStart="15dp"
 
-        android:background="@color/black"
+
         android:onClick="collab"
         android:text="Collaborate (Item Or Contact)"
         android:textColor="@android:color/white" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:id="@+id/btnItems"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
@@ -126,7 +132,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginStart="15dp"
 
-        android:background="@color/black"
+
 
         android:text="View Item List"
         android:textColor="@android:color/white" />

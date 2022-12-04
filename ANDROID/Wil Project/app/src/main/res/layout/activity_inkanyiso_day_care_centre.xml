@@ -85,22 +85,27 @@
         android:layout_margin="5dp"
         android:text="The centre provides day care for children with special needs and well as training for parents of children with disabilities. In 2022 EmployAbility and Khulisani were able to raise funding to fix the roof that was leaking, repair the ceiling boards, paint the exterior of the classroom and provide a salary for a teacher assistant." />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:id="@+id/btnMoney"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="15dp"
         android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
 
-        android:background="@color/black"
+
+        android:onClick="google"
         android:text="Donate Money"
         android:textColor="@android:color/white" />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:id="@+id/btnCollab"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
@@ -110,12 +115,14 @@
         android:layout_marginTop="15dp"
         android:layout_marginStart="15dp"
 
-        android:background="@color/black"
+
         android:onClick="collab"
         android:text="Collaborate (Item Or Contact)"
         android:textColor="@android:color/white" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:id="@+id/btnItems"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
@@ -124,8 +131,6 @@
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
         android:layout_marginStart="15dp"
-
-        android:background="@color/black"
 
         android:text="View Item List"
         android:textColor="@android:color/white" />

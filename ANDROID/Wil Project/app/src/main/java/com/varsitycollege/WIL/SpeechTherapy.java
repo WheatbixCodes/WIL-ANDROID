@@ -32,18 +32,18 @@ public class SpeechTherapy extends AppCompatActivity {
 
 
         ArrayList<SlideModel> slideModels = new ArrayList<>();
+        slideModels.add(new SlideModel(R.drawable.image4, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.image10, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.image12, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.image5, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.image2, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.image4,ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.image3, ScaleTypes.FIT));
+        /*slideModels.add(new SlideModel(R.drawable.image4,ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.image3, ScaleTypes.FIT));*/
         imageSlider.setImageList(slideModels, ScaleTypes.FIT);
 
         btnItems = (Button) findViewById(R.id.btnItems);
         btnMoney = (Button) findViewById(R.id.btnMoney);
 
         btnCollab = (Button) findViewById(R.id.btnCollab);
-        binding.backBtn.setOnClickListener(new View.OnClickListener() {
+        /*binding.backBtn.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -60,18 +60,32 @@ public class SpeechTherapy extends AppCompatActivity {
                 Intent intent = new Intent(SpeechTherapy.this, List_Speech.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
     }
 
-    public void back(View view)
+    public void openGoogle(View view)
+    {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+        intent.setData(Uri.parse("http://www.google.com"));
+        startActivity(intent);
+    }
+
+    public void backSpeech(View view)
     {
         Intent intent = new Intent(SpeechTherapy.this, InitiativeActivity.class);
         startActivity(intent);
     }
 
+    public void itemsSpeech(View view)
+    {
+        Intent intent = new Intent(SpeechTherapy.this, LIst_Thandi.class);
+        startActivity(intent);
+    }
 
-    public void collab(View view)
+    public void collabSpech(View view)
     {
         Intent intent = new Intent(SpeechTherapy.this, Collab.class);
         startActivity(intent);

@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SpeechTherapy"
-    android:orientation="vertical">
+    android:onClick="openGoogle"
+    android:orientation="vertical"
+    tools:context=".SpeechTherapy">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -45,7 +46,7 @@
             android:layout_height="48dp"
             android:background="@null"
             android:contentDescription="backBtn"
-
+            android:onClick="backSpeech"
             android:padding="10dp"
             android:src="@drawable/ic_back_white" />
 
@@ -69,10 +70,10 @@
         android:layout_width="329dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:textSize="@dimen/_13sdp"
         android:layout_margin="3dp"
-        android:text="EmployAbility currently sponsors speech and language therapy for 3 children with a disability living at the Thandi House Childrens Home and the children at The Inkanyiso Day Care Centre."/>
+        android:layout_marginTop="15dp"
+        android:text="EmployAbility currently sponsors speech and language therapy for 3 children with a disability living at the Thandi House Childrens Home and the children at The Inkanyiso Day Care Centre."
+        android:textSize="@dimen/_13sdp" />
 
     <TextView
         android:id="@+id/txt3"
@@ -80,13 +81,14 @@
         android:layout_width="329dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="@dimen/_13sdp"
         android:layout_margin="15dp"
-        android:text="Please feel free to view what items this intiative needs, collaborate with them by sending your contact details or visit the website to donate money and view more information on this intiative " />
+        android:text="Please feel free to view what items this intiative needs, collaborate with them by sending your contact details or visit the website to donate money and view more information on this intiative "
+        android:textSize="@dimen/_13sdp" />
 
 
-
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:id="@+id/btnMoney"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
@@ -96,25 +98,28 @@
         android:layout_margin="15dp"
         android:layout_marginTop="5dp"
 
-        android:background="@color/black"
+
         android:text="Donate Money"
         android:textColor="@android:color/white" />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:id="@+id/btnCollab"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:onClick="collab1"
         android:layout_gravity="center"
         android:layout_margin="3dp"
 
-        android:background="@color/black"
+        android:onClick="collabSpech"
         android:text="Collaborate (Item Or Contact)"
         android:textColor="@android:color/white" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
         android:id="@+id/btnItems"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
@@ -123,7 +128,7 @@
         android:layout_gravity="center"
         android:layout_margin="15dp"
 
-        android:background="@color/black"
+        android:onClick="itemsSpeech"
         android:text="View Item List"
         android:textColor="@android:color/white" />
 
