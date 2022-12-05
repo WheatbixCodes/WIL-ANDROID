@@ -37,6 +37,10 @@
                     android:layout_height="110dp"
                     android:layout_alignParentTop="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                    android:paddingLeft="25dp"
+>>>>>>> ad177bf26afd11bf8ea4be3e04fcc81abbecba8d
 =======
                     android:paddingLeft="25dp"
 >>>>>>> ad177bf26afd11bf8ea4be3e04fcc81abbecba8d
