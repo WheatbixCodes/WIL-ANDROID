@@ -35,7 +35,7 @@
                     android:layout_width="220dp"
                     android:layout_height="110dp"
                     android:layout_alignParentTop="true"
-                    android:paddingLeft="20dp"
+                    android:paddingLeft="25dp"
                     android:layout_alignParentRight="true"
                     android:src="@drawable/employability" />
             </RelativeLayout>
