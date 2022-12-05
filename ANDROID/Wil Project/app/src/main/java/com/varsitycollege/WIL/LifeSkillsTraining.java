@@ -91,7 +91,7 @@ public class LifeSkillsTraining extends AppCompatActivity {
     }
 
     private void openThandilist() {
-        Intent intent = new Intent(this,List_Employability.class);
+        Intent intent = new Intent(this, List_LifeSkills.class);
         startActivity(intent);
     }
 

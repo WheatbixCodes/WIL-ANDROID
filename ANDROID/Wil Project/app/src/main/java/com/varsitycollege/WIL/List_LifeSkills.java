@@ -6,11 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -20,7 +18,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class List_Employability extends AppCompatActivity {
+public class List_LifeSkills extends AppCompatActivity {
+
     private FirebaseDatabase mFirebaseDatabase;
     public static DatabaseReference myRef;
     private ArrayList<String> categoryList;
@@ -32,15 +31,15 @@ public class List_Employability extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_employability);
+        setContentView(R.layout.activity_list_life_skills);
 
         listView = findViewById(R.id.list);
-       // backBtn = findViewById(R.id.donationsBackBtnLtE);
+        //backBtn = findViewById(R.id.donationsBackBtnInk);
 
         categoryList = new ArrayList<>();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
 
-        myRef = mFirebaseDatabase.getReference("ItemsList").child("Learn2Earn");
+        myRef = mFirebaseDatabase.getReference("ItemsList").child("LifeSkills");
         categoryArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, categoryList);
         listView.setAdapter(categoryArrayAdapter);
 
@@ -55,26 +54,17 @@ public class List_Employability extends AppCompatActivity {
                 }
                 listView.setAdapter(categoryArrayAdapter);
             }
+
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });
 
-        /*backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent employabilityIntent = new Intent(List_Employability.this, Employability_life_skills_training.class);
-                startActivity(employabilityIntent);
-            }
-        });*/
-
-
-
     }
-    public void backBtn(View view)
+    public void backBtnInkanyiso(View view)
     {
-        Intent intent = new Intent(List_Employability.this, Employability_life_skills_training.class);
+        Intent intent = new Intent(this, LifeSkillsTraining.class);
         startActivity(intent);
     }
 }
