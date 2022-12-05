@@ -31,21 +31,16 @@
                     android:text="Please\nkeep in\ touch! "
                     android:textColor="@color/whiteTextColor" />
 
-                <ImageView
+<ImageView
                     android:id="@+id/charity"
                     android:layout_width="220dp"
                     android:layout_height="110dp"
                     android:layout_alignParentTop="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
+                    android:paddingRight="25dp"
+
                     android:paddingLeft="25dp"
->>>>>>> ad177bf26afd11bf8ea4be3e04fcc81abbecba8d
-=======
-                    android:paddingLeft="25dp"
->>>>>>> ad177bf26afd11bf8ea4be3e04fcc81abbecba8d
                     android:layout_alignParentRight="true"
-                    android:paddingLeft="20dp"
                     android:src="@drawable/employability" />
 
 
