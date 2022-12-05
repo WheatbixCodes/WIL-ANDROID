@@ -77,7 +77,6 @@ private String password = "", email = "";
             loginUser();
           }
 
-
     }
 
     private void loginUser() {
