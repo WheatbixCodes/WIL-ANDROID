@@ -137,8 +137,14 @@
                     android:text="Click Me to send an email" />
 
 
-            </LinearLayout>
 
+            </LinearLayout>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Testing Tet"
+                android:textColor="@color/white"
+                />
 
         </LinearLayout>
 
