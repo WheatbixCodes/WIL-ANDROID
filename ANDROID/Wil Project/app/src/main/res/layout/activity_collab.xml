@@ -156,17 +156,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
-                android:text="Fourways Office: 011 465 1281"
-                android:layout_gravity="center_horizontal"
-                android:textSize="@dimen/_13sdp"
-                android:textColor="@color/white"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="10dp"
-                android:text="Braamfontein Training Rooms : 081 338 1809"
+                android:text="Ali Smeaton (Chairperson): 082 982 0764"
                 android:layout_gravity="center_horizontal"
                 android:textSize="@dimen/_13sdp"
                 android:textColor="@color/white"
