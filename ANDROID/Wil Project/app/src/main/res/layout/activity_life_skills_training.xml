@@ -86,22 +86,22 @@
         android:layout_margin="5dp"
         android:text="Employability has been providing a 12-month training programme for youth exiting special needs schools. Helping to equip them with the life and literary skills necessary to thrive in a working environment" />
 
+
     <androidx.appcompat.widget.AppCompatButton
-        android:background="@drawable/shape_button01"
-        android:backgroundTint="@color/employabilityThirdPink"
         android:id="@+id/btnMoney"
         style="@style/MaterialAlertDialog.Material3.Title.Icon"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
 
         android:layout_marginTop="5dp"
-        android:layout_marginStart="15dp"
-        android:layout_gravity="center"
+        android:background="@drawable/shape_button01"
+        android:backgroundTint="@color/employabilityThirdPink"
 
 
         android:text="Donate Money"
         android:textColor="@android:color/white" />
-
 
     <androidx.appcompat.widget.AppCompatButton
         android:background="@drawable/shape_button01"

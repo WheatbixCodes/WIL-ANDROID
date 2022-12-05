@@ -35,8 +35,9 @@
                     android:layout_width="220dp"
                     android:layout_height="110dp"
                     android:layout_alignParentTop="true"
+                    android:paddingLeft="20dp"
                     android:layout_alignParentRight="true"
-                    android:src="@drawable/charity" />
+                    android:src="@drawable/employability" />
             </RelativeLayout>
 
             <androidx.cardview.widget.CardView
@@ -125,10 +126,12 @@
                 android:layout_marginBottom="30dp"
                 android:gravity="center">
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
+                    android:background="@drawable/shape_button01"
+                    android:backgroundTint="@color/employabilityThirdPink"
                     android:id="@+id/btnsubmitEmail"
                     style="@style/Widget.AppCompat.Button.Colored"
-                    android:layout_width="wrap_content"
+                    android:layout_width="202dp"
                     android:layout_height="75dp"
                     android:layout_below="@id/comment"
                     android:layout_centerHorizontal="true"
@@ -140,9 +143,42 @@
 
             </LinearLayout>
             <TextView
-                android:layout_width="80dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Testing Tet"
+                android:text="Alternate Contact Details"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/white"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Fourways Office: 011 465 1281"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Braamfontein Training Rooms : 081 338 1809"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Operations Coordinator, Lorraine : 081 338 1809"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/_13sdp"
                 android:textColor="@color/white"
                 />
 
