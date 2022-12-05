@@ -26,6 +26,7 @@
                 <TextView
                     style="@style/viewParent.headerText.NoMode"
                     android:layout_alignParentLeft="true"
+                    android:layout_width="120dp"
                     android:layout_centerVertical="true"
                     android:text="Please\nkeep in\ touch! "
                     android:textColor="@color/whiteTextColor" />
@@ -35,9 +36,15 @@
                     android:layout_width="220dp"
                     android:layout_height="110dp"
                     android:layout_alignParentTop="true"
-                    android:paddingLeft="20dp"
+<<<<<<< HEAD
+=======
+                    android:paddingLeft="25dp"
+>>>>>>> ad177bf26afd11bf8ea4be3e04fcc81abbecba8d
                     android:layout_alignParentRight="true"
+                    android:paddingLeft="20dp"
                     android:src="@drawable/employability" />
+
+
             </RelativeLayout>
 
             <androidx.cardview.widget.CardView
@@ -194,6 +201,7 @@
         android:background="@drawable/ic_side_bg" />
 
     <TextView
+        android:id="@+id/collab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
