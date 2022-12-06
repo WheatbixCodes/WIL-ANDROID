@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -22,7 +23,8 @@ public class Collab extends AppCompatActivity {
         setContentView(R.layout.activity_collab);
         binding=ActivityCollabBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
+        EditText TextEmail = (EditText) findViewById(R.id.TextEmail);
+        TextEmail.setText("info@employability-africa.com");
         binding.Backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,8 +44,8 @@ String [] addresses = email.split(",");
 Intent intent = new Intent(Intent.ACTION_SENDTO);
 intent.setData(Uri.parse("mailto:"));
 intent.putExtra(Intent.EXTRA_EMAIL,addresses);
-intent.putExtra(Intent.EXTRA_SUBJECT,addresses);
-intent.putExtra(Intent.EXTRA_TEXT,addresses);
+intent.putExtra(Intent.EXTRA_SUBJECT,subject);
+intent.putExtra(Intent.EXTRA_TEXT,message);
 
 if (intent.resolveActivity(getPackageManager()) != null){
     startActivity(intent);
