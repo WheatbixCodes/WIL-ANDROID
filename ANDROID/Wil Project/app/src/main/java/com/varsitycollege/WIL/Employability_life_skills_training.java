@@ -70,9 +70,9 @@ Button btnItems;
     }
 
 
-    public void collab1(View view)
+    public void collabLearn(View view)
     {
-        Intent intent = new Intent(Employability_life_skills_training.this, Collab.class);
+        Intent intent = new Intent(Employability_life_skills_training.this, List_LifeSkills.class);
         startActivity(intent);
     }
 

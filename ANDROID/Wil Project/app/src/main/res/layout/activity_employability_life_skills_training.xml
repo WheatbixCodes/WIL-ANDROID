@@ -113,7 +113,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="3dp"
-
+        android:onClick="collabLearn"
 
         android:text="Collaborate and Contact"
         android:textColor="@android:color/white"

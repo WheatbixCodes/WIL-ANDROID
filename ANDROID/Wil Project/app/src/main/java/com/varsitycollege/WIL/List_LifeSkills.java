@@ -64,7 +64,7 @@ public class List_LifeSkills extends AppCompatActivity {
     }
     public void backBtnInkanyiso(View view)
     {
-        Intent intent = new Intent(this, LifeSkillsTraining.class);
+        Intent intent = new Intent(this, Employability_life_skills_training.class);
         startActivity(intent);
     }
 }
